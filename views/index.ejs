@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image-search-abstraction-layer</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+  <h1>Image Search Abstraction Layer</h1>
+
+  <p>User stories: </p>
+
+  <ul>
+  	<li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+  	<li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+    <li>I can get a list of the last 10 submitted search strings.</li>
+  </ul>
+  
+  <h3>Example image query usage:</h3>
+  <code>https://yo-fcc-image-search-abstraction-layer/api/imagesearch/lolcats%20funny?offset=10</code>
+  
+  <h3>Example image query output:</h3>
+  <code>[{"url":"https://i.ytimg.com/vi/eJPYbdnbNh8/hqdefault.jpg","snippet":"When LOLCats Go Bad Evil LOL Cats Funny Cats - YouTube","thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowy185KSMpQWvvaGg9BtKgkI7O5V2c_Cj2mwLZ5iJVgkw19PElfwtiVr-","context":"https://www.youtube.com/watch?v=eJPYbdnbNh8"},{"url":"https://img.scoop.it/f-tKCNgJWPoGzbrK5LCQhTl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9","snippet":"Lolcats: Ohai hooman - Lolcats - Funny Pictures...","thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKqxoHtHn8b0dYvy4VKUKWZ3obuPs3O2agntOwGzNscV-mJghnsMEQgE","context":"http://www.scoop.it/t/pictures/p/1665736655/lolcats-ohai-hooman-lolcats-funny-pictures-of-cats-i-can-has"}...]</code>
+
+  <h3>Example recent searches query usage:</h3>
+  <code>https://yo-fcc-image-search-abstraction-layer/api/latest/imagesearch/</code>
+
+  <h3>Example recent searches query output:</h3>
+  <code>[{"term":"lolcats funny","when":"2018-01-21T17:21:52.910Z"},{"term":"lolcats funny","when":"2018-01-21T14:48:08.280Z"},{"term":"lolcats funny","when":"2018-01-21T13:47:01.101Z"}...]</code>
+  
+  <br>
+  <em>Developed by <a href="https://github.com/yo870" target="_blank">Yo</a></em>
+
+</body>
+</html>
